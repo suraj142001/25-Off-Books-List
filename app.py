@@ -193,3 +193,22 @@ def get_book_image(book_name):
             return res["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
     except:
         return None
+
+
+
+img_url = get_book_image(book)
+
+if img_url:
+    st.image(img_url, use_container_width=True)
+else:
+    st.image("https://via.placeholder.com/150")
+
+
+image_url
+
+
+st.image(row["image_url"], use_container_width=True)
+
+
+img_url = f"https://source.unsplash.com/200x300/?book,{book}"
+st.image(img_url)
