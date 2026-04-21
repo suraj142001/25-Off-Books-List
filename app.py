@@ -179,3 +179,17 @@ if st.button("🟢 WhatsApp Order"):
 if st.button("🗑️ Clear Cart"):
     st.session_state.cart = {}
     st.rerun()
+
+
+
+
+import requests
+
+def get_book_image(book_name):
+    url = f"https://www.googleapis.com/books/v1/volumes?q=intitle:{book_name}"
+    try:
+        res = requests.get(url).json()
+        if "items" in res:
+            return res["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
+    except:
+        return None
