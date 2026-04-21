@@ -44,7 +44,8 @@ with col1:
 
 with col2:
     st.markdown("<h2>📚 राजहंस पुस्तक पेठ , पुणे ०३८</h2>", unsafe_allow_html=True)
-    st.caption("🎉 ऑफर कालावधी : १६ एप्रिल ते १९ एप्रिल २०२६ पर्यंत")
+    st.markdown("<h2>📚 जागतिक पुस्तक दिन 📚  </h2>", unsafe_allow_html=True)
+    st.caption("🎉 ऑफर कालावधी : 23 एप्रिल ते 26 एप्रिल २०२६ पर्यंत")
 
 # =========================
 # LOAD DATA
